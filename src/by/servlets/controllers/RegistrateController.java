@@ -32,7 +32,7 @@ public class RegistrateController extends HttpServlet {
         } catch (Exception e) {
             error += "&error=yes";
         }
-        response.sendRedirect(request.getContextPath() + "/confirm.jsp?login=" + login + error);
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

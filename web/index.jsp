@@ -13,21 +13,28 @@
 </head>
 <body>
 <% User currentUser = (User) (session.getAttribute("currentSessionUser"));%>
-
-<form name="welcome" action="/welcome" method="get">
     User:
     <% if (currentUser == null) { %>
     guest:<br/>
-    <a href="login.jsp">Login</a><br/>
-    <a href="registrate.jsp">Registrate</a>
+    <button>
+        <a href="login.jsp">Login</a><br/>
+    </button>
+    <button>
+        <a href="registrate.jsp">Registrate</a>
+    </button>
     <% } else if (currentUser.isValid()) {%>
         <%= currentUser.getLogin() + " "  %>
-        <a href="/index.jsp">Logout</a>
+<form name="logout" action="/logout" method="post">
+        <button type="submit">
+            Logout
+        </button>
+</form>
     <% } %>
 
-    <br/><a href="ticketForm.jsp">ticket</a>
+    <br/><button>
+    <a href="ticketForm.jsp">ticket</a>
+</button>
 
 
-</form>
 </body>
 </html>

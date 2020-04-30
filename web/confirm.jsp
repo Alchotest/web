@@ -27,6 +27,9 @@ Welcome <%= currentUser.getLogin() + " "  %>
         Some problems with data source on the server ...
     </p>
 </c:if>
-<a href="index.jsp">main</a>
+<button>
+    <a href="index.jsp">main</a>
+</button>
+
 </body>
 </html>

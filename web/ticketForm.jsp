@@ -32,5 +32,7 @@
         <input type="submit" value="ok">
     </form>
     <% } %>
-    <a href="index.jsp">back to main page</a>
+    <button>
+        <a href="index.jsp">back to main page</a>
+    </button>
 </html>

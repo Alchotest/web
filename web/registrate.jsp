@@ -16,7 +16,6 @@
                 document.getElementById("esgMsg").innerHTML = "Account is empty";
                 return false;
             }
-
             reg.submit();
         }
     </script>
